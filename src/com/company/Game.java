@@ -70,7 +70,6 @@ public class Game extends JFrame implements KeyListener
             {
                 continue_game = true;
             }
-            e.consume();
         }
     }
 
@@ -183,6 +182,7 @@ public class Game extends JFrame implements KeyListener
 
     public void loop()
     {
+        long a = 0;
         while(true)
         {
             while (continue_game)
@@ -262,6 +262,7 @@ public class Game extends JFrame implements KeyListener
                 }
 
             }
+            a++;
         }
     }
 }
